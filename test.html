@@ -2,8 +2,8 @@
 
 <head>
     <script>
-        window.onloadTurnstileCallback = function () {
-            console.alert(`Challenge Success ${token}`);
+    const tacoCallback  = function () {
+            console.alert(`Challenge Success`);
         };
     </script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
@@ -16,7 +16,7 @@
 
     Look for your <a href="taco.html">free taco</a>.
 
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAKPDh59r8uAcSfF" data-callback="javascriptCallback"></div>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAKPDh59r8uAcSfF" data-callback="tacoCallback"></div>
 
 </body>
 
