@@ -1,18 +1,13 @@
 <html>
 
-    <head>
-        <script>
-            window.onloadTurnstileCallback = function () {
-                turnstile.render('container', {
-                    sitekey: '0x4AAAAAAAKPDh59r8uAcSfF',
-                    callback: function (token) {
-                        console.alert(`Challenge Success ${token}`);
-                    },
-                });
-            };
-        </script>
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
-    </head>
+<head>
+    <script>
+        window.onloadTurnstileCallback = function () {
+            console.alert(`Challenge Success ${token}`);
+        };
+    </script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+</head>
 
 <body>
     <h2>This is a test page</h2>
@@ -21,7 +16,8 @@
 
     Look for your <a href="taco.html">free taco</a>.
 
-    <div id="container"></div>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAKPDh59r8uAcSfF" data-callback="javascriptCallback"></div>
+
 </body>
 
 </html>
