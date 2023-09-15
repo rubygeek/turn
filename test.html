@@ -3,7 +3,7 @@
     <head>
         <script>
             window.onloadTurnstileCallback = function () {
-                turnstile.render('#example-container', {
+                turnstile.render('container', {
                     sitekey: '0x4AAAAAAAKPDh59r8uAcSfF',
                     callback: function (token) {
                         console.alert(`Challenge Success ${token}`);
@@ -20,8 +20,8 @@
     <h3>Have a nice day</h3>
 
     Look for your free taco.
-    
-    <div id="example-container"></div>
+
+    <div id="container"></div>
 </body>
 
 </html>
