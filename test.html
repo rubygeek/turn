@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+
+
+</head>
+<body>
+<h2>This is a test page</h2>
+
+<h3>Have a nice day</h3>
+
+<script>
+
+
+window.onloadTurnstileCallback = function () {
+    turnstile.render('#example-container', {
+        sitekey: '0x4AAAAAAAKPDh59r8uAcSfF',
+        callback: function(token) {
+            console.log(`Challenge Success ${token}`);
+        },
+    });
+};
+
+</script>
+
+
+</body>
+
+</html>
