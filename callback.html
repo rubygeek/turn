@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<title>A call back page</title>
+<script>
+    window.onloadTurnstileCallback = function () {
+        turnstile.render('#example-container', {
+            sitekey: '0x4AAAAAAAKCLxZgXfMRIc0d',
+            callback: function(token) {
+                console.log(`Challenge Success ${token}`);
+            },
+        });
+    };
+
+</script>
+</head>
+
+<body>
+
+<h2>This is callback Page</h2>
+</body>
+</html>
+
+
+
+
+
