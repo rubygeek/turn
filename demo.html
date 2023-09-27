@@ -1,34 +1,22 @@
 <html>
+
 <head>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 </head>
 
-<h2>Taco Pages</h2>
-<ul>
-<li><a href="/form-pass.html">A Taco Form - Always Pass</a></li>
-<li><a href="/form-fail.html">A Taco Form - Always Fail</a></li>
-<li><a href="/form-inv-pass.html">A Taco Form - Always Pass Invisible</a></li>
-<li><a href="/form-inv-fail.html">A Taco Form - Always Fail Invsible</a></li><l
-<li><a href="/interactive-form.html">A Taco Form - Interactive</a></li>
-</ul>
+<body>
 
+    <h2>Taco Pages</h2>
+    <ul>
+        <li><a href="/form-pass.html">Always Pass</a></li>
+        <li><a href="/form-fail.html">Always Fail</a></li>
+        <li><a href="/form-inv-pass.html">Always Pass Invisible</a></li>
+        <li><a href="/form-inv-fail.html">Always Fail Invsible</a></li>
+        <li><a href="/interactive-form.html">Interactive</a></li>
+    </ul>
 
-<div id="example-container"></div>
-<script>
-
-window.onloadTurnstileCallback = function () {
-    turnstile.render('#example-container', {
-        sitekey: '0x4AAAAAAAKCLxZgXfMRIc0d',
-        callback: function(token) {
-            console.log(`Challenge Success ${token}`);
-        },
-    });
-};
-
-
-</script>
 
 
 
 </body>
+
 </html>
