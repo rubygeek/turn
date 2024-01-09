@@ -11,10 +11,10 @@
 
 window.onloadTurnstileCallback = function () {
     turnstile.render('#example-container', {
-        sitekey: '0x4AAAAAAAKPDh59r8uAcSfF',
+        sitekey: '2x00000000000000000000AB',
         callback: function(token) {
             console.log(`Challenge Success ${token}`);
-            window.location.replace("https://www.rejectedgamers.com/test2/taco.html");
+            window.location.replace("https://www.rejectedgamers.com/test3/taco.html");
         },
     });
 };
