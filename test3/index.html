@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+
+
+
+</head>
+<body>
+<div id="example-container"></div>
+<script>
+
+window.onloadTurnstileCallback = function () {
+    turnstile.render('#example-container', {
+        sitekey: '0x4AAAAAAAKPDh59r8uAcSfF',
+        callback: function(token) {
+            console.log(`Challenge Success ${token}`);
+            window.location.replace("https://www.rejectedgamers.com/test2/taco.html");
+        },
+    });
+};
+
+
+</script>
+
+
+
+</body>
+</html>
