@@ -11,6 +11,7 @@
 window.onloadTurnstileCallback = function () {
     turnstile.render('#example-container', {
         sitekey: '0x4AAAAAAADnPIDROrmt1Wwj',
+        clearance_level: 'no_clearance',
         callback: function(token) {
             console.log(`Challenge Success ${token}`);
             window.location.replace("https://www.rejectedgamers.com/test2/taco.html");
